@@ -1,11 +1,11 @@
 :root {
-    --color-primary: #b71c1c; /* Darker cool red */
+    --color-primary: #b71c1c; /* Darker  red */
     --color-primary-light: hsla(0, 78%, 38%, 0.18);
     --color-primary-variant: #9a0007;
     --color-red: #ff5252; /* Bright red */
     --color-red-light: hsla(0, 100%, 67%, 0.15);
-    --color-green: #00e676; /* Kept as is */
-    --color-green-light: hsla(156, 100%, 38%, 0.15); /* Kept as is */
+    --color-green: #00e676;
+    --color-green-light: hsla(156, 100%, 38%, 0.15); 
     --color-gray-900: #1a1a1a; /* Very dark gray */
     --color-gray-700: #2a2a2a; /* Dark gray */
     --color-gray-300: rgba(255, 255, 255, 0.3); /* Light gray */
@@ -539,6 +539,10 @@ input, textarea, select {
 
 .dashboard {
     margin-top: 6rem;
+}
+
+.sidebar__toggle {
+    display: none;
 }
 
 .dashboard__container  {

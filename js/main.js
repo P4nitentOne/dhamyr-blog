@@ -46,7 +46,7 @@ const HideSidebarBtn = document.querySelector('#hide__sidebar-btn');
 
 const showSidebar= () => {
     sidebar.style.left= '0';
-    showeSidebarBtn.style.display= 'none';
+    showSidebarBtn.style.display= 'none';
     HideSidebarBtn.style.display= 'inline-block';
 
 }

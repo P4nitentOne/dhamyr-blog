@@ -22,7 +22,7 @@ include 'partials/header.php'
                 <li><a href="manage-users.php"><i  class="uil uil-users-alt"></i>
                     <h5>Manage User</h5>
                 </a></li>
-                <li><a href="add-category.php" > <i class="uil uil-pen"></i>
+                <li><a href="add-category.php"  > <i class="uil uil-pen"></i>
                     <h5>Add Category</h5>
                 </a></li>
                 <li><a href="manage-categories.php" class="active"> <i class="uil uil-list-ul"></i>
@@ -59,6 +59,11 @@ include 'partials/header.php'
                         <td><a href="edit-category.php" class="btn sm">Edit</a></td>
                         <td><a href="Delete-category.php" class="btn sm danger">Delete</a></td>
                     </tr>
+                    <tr>
+                        <td>TEST</td>
+                        <td><a href="edit-category.php" class="btn sm">Edit</a></td>
+                        <td><a href="Delete-category.php" class="btn sm danger">Delete</a></td>
+                    </tr
                 </tbody>
             </table>
         </main>

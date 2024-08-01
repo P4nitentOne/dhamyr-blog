@@ -15,7 +15,7 @@ include 'partials/header.php'
                 <li><a href="index.php" ><i class="uil uil-postcard"></i>
                     <h5>Manage Post</h5>
                 </a></li>
-               
+                <?php if(isset($_SESSION['user_is_admin'])) : ?>
                 <li><a href="add-user.php" ><i class="uil uil-user-plus"></i>
                     <h5>Add User</h5>
                 </a></li>
@@ -28,7 +28,7 @@ include 'partials/header.php'
                 <li><a href="manage-categories.php" > <i class="uil uil-list-ul"></i>
                     <h5>Manage Category</h5>
                 </a></li>
-               
+                <?php endif ?>
             </ul>
         </aside>
         <main>
@@ -39,6 +39,7 @@ include 'partials/header.php'
                         <tr>
                             <th>Name</th>
                             <th>Username</th>
+                            <th>Admin</th>
                             <th>Edit</th>
                             <th>Delete</th>
                         </tr>
@@ -48,18 +49,21 @@ include 'partials/header.php'
                     <tr>
                         <td>Dante Alighieri</td>
                         <td>DanteXV</td>
+                        <td>Yes</td>
                         <td><a href="edit-user.php" class="btn sm">Edit</a></td>
                         <td><a href="Delete-category.php" class="btn sm danger">Delete</a></td>
                     </tr>
                     <tr>
                         <td>Miss Froggz</td>
                         <td>Froggzzz</td>
+                        <td>Yes</td>
                         <td><a href="edit-user.php" class="btn sm">Edit</a></td>
                         <td><a href="Delete-category.php" class="btn sm danger">Delete</a></td>
                     </tr>
                     <tr>
                         <td>Toadie buns</td>
                         <td>Toadiebny</td>
+                        <td>No</td>
                         <td><a href="edit-user.php" class="btn sm">Edit</a></td>
                         <td><a href="Delete-category.php" class="btn sm danger">Delete</a></td>
                     </tr>
